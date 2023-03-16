@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Teste ChatBot Rubeus</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Teste Chatbot</h1>
+							<p class="major">Seja muito bem vindo(a) a página de teste de utilização do nosso
+                            Chatbot Rubeus. Esta é uma breve demonstração de como irá funcionar as automações
+                            e as interações entre Bot X Agente X Cliente.
+                            Aproveitem!! 
+							</p>
+						</div>
+						<div class="image">
+							<img src="images/rubeus.png" alt="" />
+						</div>
+					</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script language="javascript" type="text/javascript">
+				(function (d, w, c) {
+    if (!d.getElementById("spd-busns-spt")) {
+        var n = d.getElementsByTagName('script')[0],
+            s = d.createElement('script');
+        var loaded = false;
+        s.id = "spd-busns-spt";
+        s.async = "async";
+        s.setAttribute("data-self-init", "false");
+        s.setAttribute("data-init-type", "opt");
+        s.src = 'https://cdn.freshbots.ai/assets/share/js/freshbots.min.js';
+        s.setAttribute("data-client", "11bc29b9913b30b6cefbe656d64ffbd0d76c9122");
+        s.setAttribute("data-bot-hash", "d3fde7767340bfb1486ed15b75a5fdfdc4937a43");
+        s.setAttribute("data-env", "prod");
+        s.setAttribute("data-region", "us");
+        if (c) {
+            s.onreadystatechange = s.onload = function () {
+                if (!loaded) {
+                    c();
+                }
+                loaded = true;
+            };
+        }
+        n.parentNode.insertBefore(s, n);
+    }
+})(document, window, function () {
+    
+    /*let min = 0;
+
+    setInterval(function() {
+        min++;
+        updateCounter(min);},60000);
+
+    function updateCounter(){
+            console.log ("Passou" +min+ "minuto(s)");
+            return min;
+        };*/
+    
+    Freshbots.initiateWidget({
+        autoInitChat: false,
+        /*updateCounter: updateCounter,*/
+        getClientParams: function () {
+            return;
+        }
+    }, function (successResponse) {
+    }, function (errorResponse) {
+    },);
+
+});
+			</script>
+	</body>
+</html>
