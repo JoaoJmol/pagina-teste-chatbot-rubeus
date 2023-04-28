@@ -1,8 +1,9 @@
   function initFreshChat() {
     window.fcWidget.init({
-     token: "221eb7c3-872b-4f1e-ab2e-7df635958da1",
-	 host: "https://rubeus.freshchat.com",
-	 widgetUuid: "50cab10c-86bd-4e8a-8e7f-f2f09a742fc3",
+    token: "221eb7c3-872b-4f1e-ab2e-7df635958da1",
+	  host: "https://rubeus.freshchat.com",
+	  widgetUuid: "50cab10c-86bd-4e8a-8e7f-f2f09a742fc3",
+    storageMethod: {type: "cache"}
     });
 
     // Copy the below lines under window.fcWidget.init inside initFreshChat function in the above snippet
